@@ -15,7 +15,9 @@
     "dev:server": "turbo -F @convex-s3-universal/backend dev",
     "dev:setup": "turbo -F @convex-s3-universal/backend dev:setup"
   },
-  "dependencies": {},
+  "dependencies": {
+    "convex": "^1.25.4"
+  },
   "devDependencies": {
     "turbo": "^2.5.4"
   },

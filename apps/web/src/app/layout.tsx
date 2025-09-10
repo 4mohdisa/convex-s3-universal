@@ -21,24 +21,26 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  	return (
-		<html lang="en" suppressHydrationWarning>
-			<body
-				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-			>
-				<ClerkProvider>
-					<Providers>
-						<div className="grid grid-rows-[auto_1fr] h-svh">
-							<Header />
-							{children}
-						</div>
-					</Providers>
-				</ClerkProvider>
-			</body>
-		</html>
-	);
-}
+    children,
+  }: Readonly<{
+    children: React.ReactNode;
+  }>) {
+    return (
+      <html lang="en" suppressHydrationWarning>
+        <body
+          className={`${geistSans.variable} ${geistMono.variable} 
+  antialiased`}
+          suppressHydrationWarning={true} // Add this line
+        >
+          <ClerkProvider>
+            <Providers>
+              <div className="grid grid-rows-[auto_1fr] h-svh">
+                <Header />
+                {children}
+              </div>
+            </Providers>
+          </ClerkProvider>
+        </body>
+      </html>
+    );
+  }
