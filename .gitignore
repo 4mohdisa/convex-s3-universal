@@ -3,3 +3,9 @@ node_modules
 .alchemy
 .env
 .env.local
+
+# Setup documentation files
+CLOUDFLARE-R2-SETUP.md
+GCP-CLOUD-STORAGE-SETUP.md
+R2-SETUP.md
+task2.md
