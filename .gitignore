@@ -4,6 +4,14 @@ node_modules
 .env
 .env.local
 
+# Credentials and sensitive files
+*.json
+!package*.json
+!tsconfig.json
+!components.json
+!turbo.json
+!bts.jsonc
+
 # Setup documentation files
 CLOUDFLARE-R2-SETUP.md
 GCP-CLOUD-STORAGE-SETUP.md

@@ -14,6 +14,8 @@ import type {
   FunctionReference,
 } from "convex/server";
 import type * as healthCheck from "../healthCheck.js";
+import type * as openai from "../openai.js";
+import type * as pdfActions from "../pdfActions.js";
 import type * as privateData from "../privateData.js";
 import type * as r2 from "../r2.js";
 import type * as todos from "../todos.js";
@@ -28,6 +30,8 @@ import type * as todos from "../todos.js";
  */
 declare const fullApi: ApiFromModules<{
   healthCheck: typeof healthCheck;
+  openai: typeof openai;
+  pdfActions: typeof pdfActions;
   privateData: typeof privateData;
   r2: typeof r2;
   todos: typeof todos;
